@@ -1,0 +1,15 @@
+To run the code, you should first construct the dataset. 
+Each line on your dataset should contains the following information, and then split them by a ","
+  1. Bug report ID
+  2. Product Name
+  3. processed summary, and seperate the words by a space
+  4. processed description, and seperate the words by a space
+  5. component name
+  6. severity level
+  7. priority
+  8. assignee developers
+  9. topic id, which is obtained by TMT
+  10.fixed or opened.
+  
+After generating the dataset, you should split them into 10 small dataset, and named as "ProjectName0" "ProjectName1" ... "ProjectName10".
+Using severity prediction as example, you should modifity the L487 string theme = "sample_file"; to string theme = "ProjectName";
